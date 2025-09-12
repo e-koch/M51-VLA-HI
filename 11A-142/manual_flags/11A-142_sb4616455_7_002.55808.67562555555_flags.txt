@@ -1,0 +1,8 @@
+spw='2:1407~1410'
+antenna='ea15,ea28'
+scan='76~78'
+scan='2'
+spw='5' scan='7,8'
+scan='56' antenna='ea14'
+spw='2' scan='22'
+

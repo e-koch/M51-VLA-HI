@@ -1,0 +1,7 @@
+spw='2:1407~1410'
+spw='2:0~250'
+scan='76~78'
+scan='2'
+spw='3' scan='7~21'
+spw='5' antenna='ea15'
+spw='6' scan='15'

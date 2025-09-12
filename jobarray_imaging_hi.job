@@ -1,0 +1,41 @@
+# /bin/csh
+#
+#$ -cwd -j y
+#$ -o casa_m51_vla_imaging.phangspipeline.$JOB_ID.$TASK_ID.log
+#$ -q lThC.q
+#$ -N casa_m51_vla_imaging
+#$ -t 1-5
+#$ -m e
+#$ -M eric.koch@cfa.harvard.edu
+#$ -pe mthread 32
+#$ -l mres=256G,h_data=8G,h_vmem=8G
+
+
+##$ -pe mthread 32
+##$ -l mres=320G,h_data=10G,h_vmem=10G,himem
+
+echo + `date` $JOB_NAME started on $HOSTNAME in $QUEUE with jobID=$JOB_ID and taskID=$SGE_TASK_ID
+echo NSLOTS=$NSLOTS
+#
+set CASA = $HOME/casa-6.4.1-12-pipeline-2022.2.0.68/bin/
+time \
+
+cd $HOME/scratch/M51_VLA/
+
+mkdir -p logs
+
+mkdir -p cleanmasks imaging postprocess derived release singledish
+
+
+# Ensure no time overlap in job start times
+# python -c "import time, random; time.sleep(random.randint(10, 300))"
+
+set casa_log_file = $HOME/scratch/M51_VLA/logs/casa_${JOB_ID}_${SGE_TASK_ID}_`date "+%Y%m%d-%H%M%S"`.log
+set casa_script = $HOME/M51_HI/run_casa_pipeline_hi.py
+
+setenv OMP_NUM_THREADS $NSLOTS
+
+$CASA/casa --nogui --log2term --logfile $casa_log_file -c $casa_script ${SGE_TASK_ID}
+
+echo $JOB_NAME $SGE_TASK_ID done `date`
+

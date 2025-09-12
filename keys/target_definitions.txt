@@ -1,0 +1,37 @@
+##########################################################################
+# TARGET DEFINITION KEY
+##########################################################################
+
+# Key to define the targets in a project.
+
+# In the ms_key each measurement set is mapped to a target. This key
+# defined targets according to their phase center, systemic velocity
+# and velocity width. These are used in processing the u-v data and
+# then imaging the data.
+
+# The syntax for the key is space or tab delimited:
+
+# Column 1: target name
+# Column 2: phase center r.a. string
+# Column 3: phase center dec string
+# Column 4: source velocity [km/s]
+# Column 5: velocity width [km/s]
+
+# Note that the phase center isn't the same as the object center. This
+# is an importnat distinction mainly in the case of mosaics that cover
+# only part of the object (our linear mosaic cases..
+
+##########################################################################
+
+m51		13h29m52.7s  +47d11m43.0s	587 700
+
+m51_1		13h29m52.7s  +47d11m43.0s	587 700
+m51_2		13h29m52.7s  +47d11m43.0s	587 700
+m51_3		13h29m52.7s  +47d11m43.0s	587 700
+m51_4		13h29m52.7s  +47d11m43.0s	587 700
+m51_5		13h29m52.7s  +47d11m43.0s	587 700
+m51_6		13h29m52.7s  +47d11m43.0s	587 700
+m51_7		13h29m52.7s  +47d11m43.0s	587 700
+m51_8		13h29m52.7s  +47d11m43.0s	587 700
+m51_9		13h29m52.7s  +47d11m43.0s	587 700
+
