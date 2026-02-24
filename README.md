@@ -44,10 +44,10 @@ In total, there is 39.6 h of A-config time on source.
 | Config | Time (h) |
 |--------|:--------:|
 | A      | 39.6     |
-| B      |  6.9     |
+| B      |  13.1     |
 | C      |  2.0     |
 | D      |  1.3     |
-| All    | 49.8     |
+| All    | 56     |
 
 ---
 
