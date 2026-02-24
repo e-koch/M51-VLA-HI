@@ -7,6 +7,8 @@ Uses the [PHANGS imaging pipeline](https://github.com/akleroy/phangs_imaging_scr
 
 ## Time on Source per configuration
 
+We use the time-on-source as provided in the NRAO archive.
+
 ### 11A-142 (A-config)
 
 These are the 11A-142 tracks we include for imaging.
