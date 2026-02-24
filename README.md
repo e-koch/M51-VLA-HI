@@ -111,7 +111,7 @@ Three-stage `tclean`: single-scale clean → multiscale MS-clean of the central 
 
 ---
 
-## 3. Derived Products
+## Derived Products
 
 **Script:** `run_derived_pipeline_hi.py` (run outside CASA)
 
@@ -119,12 +119,12 @@ Runs the full derived-product pipeline on the mosaicked HI cubes for all interfe
 
 ---
 
-## 4. Analysis Scripts
+## Analysis Scripts
 
 These scripts run in a standard Python environment (`spectral-cube`, `astropy`, `regions`).
 
 | Script | Description |
 |--------|-------------|
-| `measure_HI_flux.py` | Measures integrated HI flux density and HI mass from moment-0 maps; checks flux recovery vs. GBT |
+| `measure_HI_flux.py` | Measures integrated HI flux density and HI mass from moment-0 maps; checks flux recovery vs. archival literature measurements |
 | `measure_HI_spectrum.py` | Extracts and plots spatially integrated HI spectra for flux/mass verification |
 | `plot_hi_summary.py` | Produces summary diagnostic plots of the HI cubes and moment maps |
